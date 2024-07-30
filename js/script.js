@@ -14,12 +14,30 @@
 const passwordNumber = 21;
 console.log(21, typeof passwordNumber);
 
-//recupero il div dall'html
+// recupero il div dall'html
 const myDiv = document.getElementById('my-div')
-console.log(myDiv)
+console.log(myDiv);
 
 // # Fase di raccolta dati
+//recupero del nome utente
+const userName = prompt('Qual\'è il tuo nome?', 'andrea');
+console.log(userName);
+
+//recupero cognome utente
+const userLastName = prompt('Qual\'è il tuo cognome?', 'margutti');
+console.log(userLastName);
+
+//recupero colore preferito
+const userColor = prompt('Qual\'è il tuo colore preferito?', 'viola');
+console.log(userColor);
 
 // # Fase di elaborazione dati
+//creazione della password
+const myPassword = userName + userLastName + userColor + passwordNumber;
 
 //# Fase di produzione output
+//produzione password in console
+console.log(myPassword);
+
+//produzione output in pagina
+myDiv.innerHTML = `My password is <strong>${myPassword}</strong>`;

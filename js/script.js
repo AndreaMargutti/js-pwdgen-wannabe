@@ -10,25 +10,25 @@
 */
 
 // # Fase di preparazione
-// creo variabile con numero 21 
+// creo variabile con numero 21
 const passwordNumber = 21;
 console.log(21, typeof passwordNumber);
 
 // recupero il div dall'html
-const myDiv = document.getElementById('my-div')
+const myDiv = document.getElementById("my-div");
 console.log(myDiv);
 
 // # Fase di raccolta dati
 //recupero del nome utente
-const userName = prompt('Qual\'è il tuo nome?', 'andrea');
+const userName = prompt("Qual'è il tuo nome?", "andrea");
 console.log(userName);
 
 //recupero cognome utente
-const userLastName = prompt('Qual\'è il tuo cognome?', 'margutti');
+const userLastName = prompt("Qual'è il tuo cognome?", "margutti");
 console.log(userLastName);
 
 //recupero colore preferito
-const userColor = prompt('Qual\'è il tuo colore preferito?', 'viola');
+const userColor = prompt("Qual'è il tuo colore preferito?", "viola");
 console.log(userColor);
 
 // # Fase di elaborazione dati
